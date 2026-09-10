@@ -56,7 +56,7 @@ resource "aws_instance" "my_app_server" {
   vpc_security_group_ids = [aws_security_group.allow_user_to_connect.id]
 
   root_block_device {
-    volume_size = 10
+    volume_size = var.env == "prod" ? 20:10
     volume_type = "gp3"
   }
 
