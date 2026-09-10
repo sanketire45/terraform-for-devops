@@ -19,7 +19,7 @@ variable "instance_type" {
 }
 
 variable "instance_count" {
-   description = "This is the no. of ec2 instances in each env
+   description = "This is the no. of ec2 instances in each env"
    type = number
 }
 
