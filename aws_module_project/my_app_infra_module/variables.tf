@@ -18,6 +18,11 @@ variable "instance_type" {
   }
 }
 
+variable "instance_count" {
+   description = "This is the no. of ec2 instances in each env
+   type = number
+}
+
 variable "ami" {
   description = "AMI ID for the EC2 instances"
   type        = string
